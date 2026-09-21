@@ -84,12 +84,14 @@ const password=document.getElementById("12345").value;
 const error=document.getElementById("error");
 
 if(username==="sourav12_follow"&&password==="12345"){
-error.textContent="try again";
+error.textContent="";
 window.location.href="https://www.instagram.com/sourav12_follow/";
 }else{
-error.textContent="✕ Incorrect username or password";
+error.textContent="পাসওয়ার্ড ভুল আছে";setTimeout(function(){
+        error.textContent="";
+    },3000);
 }
-}
+
 </script>
   
  </body>
